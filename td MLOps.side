@@ -1,0 +1,78 @@
+{
+  "id": "16733bc4-fb17-48fa-999c-93eaea3319d6",
+  "version": "2.0",
+  "name": "td MLOps",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "0305f54f-2c3f-46bd-a505-1e661df67b32",
+    "name": "testname",
+    "commands": [{
+      "id": "ee60ca6b-7764-419b-91bc-12b53383e7f8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc04a670-3373-45ac-8dc1-670ac2a56348",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fe31aea-c72c-48ea-ac55-691fc0871ef6",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/p/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f594c256-e14d-475e-a01b-31ff03230d3c",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='MYName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/p/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MYName"
+    }, {
+      "id": "d7b5ba7f-57eb-4003-8624-b50a3c4d0383",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/p/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5f6683-2ebb-4e17-bc4a-af91c5716c79",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Succes! The name :MYName as been submitted!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "02585a27-1f3b-42dc-a704-9f0599b3c49a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0305f54f-2c3f-46bd-a505-1e661df67b32"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
